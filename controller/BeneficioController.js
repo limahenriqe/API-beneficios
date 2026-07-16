@@ -16,7 +16,7 @@ exports.cadastrar = async(req,res)=> {
     }
 }
 
-exports.listar = async()=>{
+exports.listar = async(req,res)=>{
     try {
         const beneficios = await Beneficio.findAll()
 
